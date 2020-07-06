@@ -1,0 +1,21 @@
+{
+  "name": "@docusaurus/keyboard-shortcuts",
+  "description": "Keyboard shortcuts for Docusaurus",
+  "version": "2.0.0-alpha.58",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "rm -rf lib && node copyUntypedFiles.js && tsc"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@docusaurus/module-type-aliases": "^2.0.0-alpha.51"
+  },
+  "engines": {
+    "node": ">=10.15.1"
+  }
+}

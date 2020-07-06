@@ -12,6 +12,7 @@ import siteConfig from '@generated/docusaurus.config';
 import renderRoutes from './exports/renderRoutes';
 import DocusaurusContext from './exports/context';
 import PendingNavigation from './PendingNavigation';
+import moduleTest from './exports/ModuleTest';
 
 import './client-lifecycles-dispatcher';
 
@@ -19,6 +20,7 @@ function App(): JSX.Element {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    moduleTest();
     setIsClient(true);
   }, []);
 
